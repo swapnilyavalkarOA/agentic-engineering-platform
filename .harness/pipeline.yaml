@@ -1,0 +1,39 @@
+pipeline:
+  name: Agentic Engineering Platform POC
+  identifier: agentic_engineering_platform_poc
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Build & Test
+        identifier: Build_Test
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Install Dependencies
+                  identifier: Install_Dependencies
+                  spec:
+                    shell: Sh
+                    command: |
+                      npm install
+              - step:
+                  type: Run
+                  name: Run Cucumber Tests
+                  identifier: Run_Cucumber_Tests
+                  spec:
+                    shell: Sh
+                    command: |
+                      npx cucumber-js
+              - step:
+                  type: Run
+                  name: Run Playwright Tests
+                  identifier: Run_Playwright_Tests
+                  spec:
+                    shell: Sh
+                    command: |
+                      npx playwright test
