@@ -1,0 +1,29 @@
+{
+  "name": "agentic-engineering-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnilyavalkarOA/agentic-engineering-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/swapnilyavalkarOA/agentic-engineering-platform/issues"
+  },
+  "homepage": "https://github.com/swapnilyavalkarOA/agentic-engineering-platform#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "cucumber": "^6.0.7",
+    "playwright": "^1.56.1"
+  }
+}
